@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "574497700852",
+    "project_id": "pushnotification-fa3dc",
+    "storage_bucket": "pushnotification-fa3dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574497700852:android:204bbbbcae2f698aaed7a1",
+        "android_client_info": {
+          "package_name": "com.example.push_notification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjToicXBiYFeEwP5UjfoMLdsUdxsV7XKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
