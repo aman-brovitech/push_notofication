@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:push_notification/notification_service.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -8,10 +9,24 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  NotificationServices notificationServices = NotificationServices();
+
+  @override
+  void initState() {
+    super.initState();
+    notificationServices.isTokenRefresh();
+    notificationServices.requestNotificationPermission();
+
+    notificationServices.getDeviceToken().then((value) {
+      print('device token');
+      print(value);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
+    return const Scaffold(
+      body: Center(
         child: Text('data'),
       ),
     );
