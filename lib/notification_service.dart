@@ -62,7 +62,7 @@ class NotificationServices {
         print(message.data['id']); //payload
       }
 
-      // initLocalNotification(context, message);
+      initLocalNotification(context, message);
       showNotification(message);
     });
   }
